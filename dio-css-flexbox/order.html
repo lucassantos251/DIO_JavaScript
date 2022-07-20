@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+
+    <style type="text/css">
+        .flex
+        {
+            max-width: 300px;
+            padding: 10px;
+            margin: 10px;
+            border: 2px solid black;
+            display: flex;
+        }
+
+        .item
+        {
+            flex: 1;
+            background-color: greenyellow;
+            font-size: 20px;
+            text-align: center;
+            margin: 5px;
+        }
+
+        .o-2
+        {
+            order: -2;
+        }
+
+        .o-1
+        {
+            order: -1;
+        }
+
+        .o0
+        {
+            order: 0;
+        }
+
+        .o1
+        {
+            order: 1;
+        }
+
+        .o2
+        {
+            order: 2;
+        }
+
+        .o3
+        {
+            order: 3;
+        }
+
+        .o4
+        {
+            order: 4;
+        }
+
+        .column
+        {
+            flex-direction: column;
+        }
+
+        #center
+        {            
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #botao
+        {
+            background-color: black;
+            margin: 5px;
+            font-size: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            width: 100px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+        }
+
+        #botao a
+        {
+            text-decoration: none;
+            color:white
+        }
+    </style>
+</head>
+<body>
+    <h1>Order</h1>
+
+    <h3>Row</h3>
+    <p>order: 0</p>
+    <div class="flex">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+
+    <p>order: diferentes</p>
+    <div class="flex">
+        <div class="item o2">1</div>
+        <div class="item o4">2</div>
+        <div class="item o3">3</div>
+        <div class="item o1">4</div>
+    </div>
+
+    <p>order: negativas</p>
+    <div class="flex">
+        <div class="item o-2">1</div>
+        <div class="item o4">2</div>
+        <div class="item o3">3</div>
+        <div class="item o-1">4</div>
+    </div>
+
+    <h3>Column</h3>
+    <p>order: 0</p>
+    <div class="flex column">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+
+    <p>order: diferentes</p>
+    <div class="flex column">
+        <div class="item o2">1</div>
+        <div class="item o4">2</div>
+        <div class="item o3">3</div>
+        <div class="item o1">4</div>
+    </div>
+
+    <p>order: negativas</p>
+    <div class="flex column">
+        <div class="item o-2">1</div>
+        <div class="item o4">2</div>
+        <div class="item o3">3</div>
+        <div class="item o-1">4</div>
+    </div>
+
+    <div id="center">
+        <div id="botao"><a href="index.html">VOLTAR</a></div>
+    </div>    
+</body>
+</html>

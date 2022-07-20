@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-flow</title>
+
+    <style type="text/css">
+        .flex
+        {
+            border: 2px solid black;
+            display: flex;
+            max-width: 500px;            
+            max-height: 200px;
+            margin-bottom: 10px;
+        }
+
+        .default
+        {
+            flex-flow: row nowrap;
+        }
+
+        .row-wrap
+        {
+            flex-flow: row wrap;
+        }
+
+        .row-wrap-reverse
+        {
+            flex-flow: row wrap-reverse;
+        }
+
+        .row-reverse-nowrap
+        {
+            flex-flow: row-reverse nowrap;
+        }
+
+        .row-reverse-wrap
+        {
+            flex-flow: row-reverse wrap;
+        }
+
+        .row-reverse-wrap-reverse
+        {
+            flex-flow: row-reverse wrap-reverse;
+        }
+
+        .column-nowrap
+        {
+            flex-flow: column nowrap;
+        }
+
+        .column-wrap
+        {
+            flex-flow: column wrap;
+        }        
+
+        .column-wrap-reverse
+        {
+            flex-flow: column wrap-reverse;
+        }
+
+        .column-reverse-nowrap
+        {
+            flex-flow: column-reverse nowrap;
+        }
+
+        .column-reverse-wrap
+        {
+            flex-flow: column-reverse wrap;
+        }
+
+        .column-reverse-wrap-reverse
+        {
+            flex-flow: column-reverse wrap-reverse;
+        }
+
+        .item
+        {
+            background-color: blueviolet;
+            margin: 5px;
+            color: white;
+            text-align: center;
+            width: 100px;
+            height: 50px;
+            line-height: 50px;
+        }
+
+        #center
+        {            
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #botao
+        {
+            background-color: black;
+            margin: 5px;
+            font-size: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            width: 100px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+        }
+
+        #botao a
+        {
+            text-decoration: none;
+            color:white
+        }
+    </style>
+</head>
+<body>
+    <h1>Default: row nowrap</h1>
+    <div class="flex default">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+    </div>
+
+    <h1>row wrap</h1>
+    <div class="flex row-wrap">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+    </div>
+
+    <h1>row wrap-reverse</h1>
+    <div class="flex row-wrap-reverse">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+    </div>
+
+    <h1>row-reverse nowrap</h1>
+    <div class="flex row-reverse-nowrap">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+        <div class="item">Item 7</div>
+    </div>
+
+    <h1>row-reverse wrap</h1>
+    <div class="flex row-reverse-wrap">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+        <div class="item">Item 7</div>
+    </div>
+
+    <h1>row-reverse wrap-reverse</h1>
+    <div class="flex row-reverse-wrap-reverse">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+        <div class="item">Item 7</div>
+    </div>
+
+    <h1>column nowrap</h1>
+    <div class="flex column-nowrap">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+    </div>
+
+    <h1>column wrap</h1>
+    <div class="flex column-wrap">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+        <div class="item">Item 7</div>
+    </div>
+
+    <h1>column wrap-reverse</h1>
+    <div class="flex column-wrap-reverse">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+        <div class="item">Item 7</div>
+    </div>
+
+    <h1>column-reverse nowrap</h1>
+    <div class="flex column-reverse-nowrap">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+    </div>
+
+    <h1>column-reverse wrap</h1>
+    <div class="flex column-reverse-wrap">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+        <div class="item">Item 7</div>
+    </div>
+
+    <h1>column-reverse wrap-reverse</h1>
+    <div class="flex column-reverse-wrap-reverse">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+        <div class="item">Item 7</div>
+    </div>
+    
+    <div id="center">
+        <div id="botao"><a href="index.html">VOLTAR</a></div>
+    </div>    
+</body>
+</html>

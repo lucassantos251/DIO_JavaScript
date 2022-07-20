@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+
+    <style type="text/css">
+        .flex
+        {
+            max-width: 400px;
+            padding: 10px;
+            border: 2px solid black;
+            display: flex;
+            margin: 5px;
+        }
+
+        .item
+        {
+            background-color: brown;
+            color: white;
+            font-size: 17px;
+            margin: 5px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .flex-1
+        {
+            /*grow = 1, shrink = 1, basis = 0*/
+            flex: 1;
+        }
+
+        .flex-2
+        {
+            /*grow = 2, shrink = 1, basis = 0*/
+            flex: 2;
+        }
+
+        .w200
+        {
+            width: 200px;
+            /*min-width: 250px;*/
+        }
+
+        #center
+        {            
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #botao
+        {
+            background-color: black;
+            margin: 5px;
+            font-size: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            width: 100px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+        }
+
+        #botao a
+        {
+            text-decoration: none;
+            color:white
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Flex</h1>
+    <p>Flex: 1 = (grow: 1, shrink: 1, basis: 0)</p>
+    <div class="flex">
+        <div class="item flex-1">A</div>
+        <div class="item flex-1">B</div>
+        <div class="item flex-1">C</div>
+        <div class="item flex-1">D</div>
+        <div class="item flex-1">E</div>
+    </div>
+
+    <h1>Flex</h1>
+    <p>Flex: mix</p>
+    <div class="flex">
+        <div class="item flex-1">A</div>
+        <div class="item flex-2">B</div>
+        <div class="item flex-2">C</div>
+        <div class="item flex-1">D</div>
+        <div class="item flex-1">E</div>
+    </div>
+    <div class="flex">
+        <div class="item flex-1 w200">A</div>
+        <div class="item flex-1 w200">B</div>
+        <div class="item flex-1 w200">C</div>
+        <div class="item flex-1 w200">D</div>
+        <div class="item flex-1 w200">E</div>
+    </div>
+
+    <div id="center">
+        <div id="botao"><a href="index.html">VOLTAR</a></div>
+    </div>    
+</body>
+</html>

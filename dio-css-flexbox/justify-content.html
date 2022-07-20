@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justify Content</title>
+
+    <style type="text/css">
+        .container
+        {
+            max-width: 500px;
+            max-height: 200px;
+            padding: 10px;
+            border: 2px solid black;
+            display: flex;
+        }
+
+        .item
+        {
+            background-color: aqua;
+            margin: 5px;
+            width: 100px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+        }
+
+        .flex-start
+        {
+            justify-content: flex-start;
+        }
+
+        .flex-end
+        {
+            justify-content: flex-end;
+        }
+
+        .center
+        {
+            justify-content: center;
+        }
+
+        .space-between
+        {
+            justify-content: space-between;
+        }
+
+        .space-around
+        {
+            justify-content: space-around;
+        }
+
+        .space-evenly
+        {
+            justify-content: space-evenly;
+        }
+
+        .column
+        {
+            flex-direction: column;
+            min-height: 250px;
+        }
+
+        #center
+        {            
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #botao
+        {
+            background-color: black;
+            margin: 5px;
+            font-size: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            width: 100px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+        }
+
+        #botao a
+        {
+            text-decoration: none;
+            color:white
+        }
+    </style>
+</head>
+<body>
+    <h1>Default: flex-start</h1>
+    <section class="container flex-start">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </section>    
+
+    <h1>flex-end</h1>
+    <section class="container flex-end">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </section>   
+
+    <h1>center</h1>
+    <section class="container center">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </section>    
+
+    <h1>space-between</h1>
+    <section class="container space-between">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </section>    
+
+    <h1>space-around</h1>
+    <section class="container space-around">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </section>    
+
+    <h1>space-evenly</h1>
+    <section class="container space-evenly">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </section>  
+
+    <h1>column flex-start</h1>
+    <section class="container column flex-start">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </section>    
+
+    <h1>column flex-end</h1>
+    <section class="container column flex-end">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </section>    
+
+    <h1>column center</h1>
+    <section class="container column center">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </section>    
+
+    <h1>column space-between</h1>
+    <section class="container column space-between">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </section>    
+
+    <h1>column space-around</h1>
+    <section class="container column space-around">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </section>
+
+    <h1>column space-evenly</h1>
+    <section class="container column space-evenly">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </section>
+
+    <div id="center">
+        <div id="botao"><a href="index.html">VOLTAR</a></div>
+    </div>  
+</body>
+</html>
